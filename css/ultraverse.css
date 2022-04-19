@@ -224,13 +224,6 @@
 }
 
 /* Styles limited to ultraverse sheets */
-.ultraverse {
-  /* ----------------------------------------- */
-  /*  Items Lists                              */
-  /* ----------------------------------------- */
-  /* Example style for ultraverse (can be removed if not needed) */
-}
-
 .ultraverse .item-form {
   font-family: "Roboto", sans-serif;
 }

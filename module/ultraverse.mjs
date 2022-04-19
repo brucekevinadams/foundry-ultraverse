@@ -1,9 +1,9 @@
 // Import document classes.
-import { UltraverseActor } from "./documents/actor.mjs";
-import { UltraverseItem } from "./documents/item.mjs";
+import { ultraverseActor } from "./documents/actor.mjs";
+import { ultraverseItem } from "./documents/item.mjs";
 // Import sheet classes.
-import { UltraverseActorSheet } from "./sheets/actor-sheet.mjs";
-import { UltraverseItemSheet } from "./sheets/item-sheet.mjs";
+import { ultraverseActorSheet } from "./sheets/actor-sheet.mjs";
+import { ultraverseItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { ULTRAVERSE } from "./helpers/config.mjs";
@@ -17,8 +17,8 @@ Hooks.once('init', async function() {
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.ultraverse = {
-    UltraverseActor,
-    UltraverseItem,
+    ultraverseActor,
+    ultraverseItem,
     rollItemMacro
   };
 
@@ -30,19 +30,19 @@ Hooks.once('init', async function() {
    * @type {String}
    */
   CONFIG.Combat.initiative = {
-    formula: "1d20 + @abilities.dex.mod",
+    formula: "1d6 + @abilities.dex.mod + @abilities.agi.mod + @abilities.psy.mod",
     decimals: 2
   };
 
   // Define custom Document classes
-  CONFIG.Actor.documentClass = UltraverseActor;
-  CONFIG.Item.documentClass = UltraverseItem;
+  CONFIG.Actor.documentClass = ultraverseActor;
+  CONFIG.Item.documentClass = ultraverseItem;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("ultraverse", UltraverseActorSheet, { makeDefault: true });
+  Actors.registerSheet("ultraverse", ultraverseActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("ultraverse", UltraverseItemSheet, { makeDefault: true });
+  Items.registerSheet("ultraverse", ultraverseItemSheet, { makeDefault: true });
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();

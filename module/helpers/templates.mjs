@@ -9,7 +9,6 @@
     // Actor partials.
     "systems/ultraverse/templates/actor/parts/actor-features.html",
     "systems/ultraverse/templates/actor/parts/actor-items.html",
-    "systems/ultraverse/templates/actor/parts/actor-spells.html",
     "systems/ultraverse/templates/actor/parts/actor-effects.html",
   ]);
 };

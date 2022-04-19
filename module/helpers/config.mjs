@@ -1,5 +1,11 @@
 export const ULTRAVERSE = {};
 
+// Define constants here, such as:
+ULTRAVERSE.foobar = {
+  'bas': 'ULTRAVERSE.bas',
+  'bar': 'ULTRAVERSE.bar'
+};
+
 /**
  * The set of Ability Scores used within the sytem.
  * @type {Object}
@@ -9,8 +15,8 @@ export const ULTRAVERSE = {};
   "dex": "ULTRAVERSE.AbilityDex",
   "con": "ULTRAVERSE.AbilityCon",
   "int": "ULTRAVERSE.AbilityInt",
-  "wis": "ULTRAVERSE.AbilityWis",
-  "cha": "ULTRAVERSE.AbilityCha"
+  "psy": "ULTRAVERSE.AbilityPsy",
+  "agi": "ULTRAVERSE.AbilityAgi"
 };
 
 ULTRAVERSE.abilityAbbreviations = {
@@ -18,6 +24,6 @@ ULTRAVERSE.abilityAbbreviations = {
   "dex": "ULTRAVERSE.AbilityDexAbbr",
   "con": "ULTRAVERSE.AbilityConAbbr",
   "int": "ULTRAVERSE.AbilityIntAbbr",
-  "wis": "ULTRAVERSE.AbilityWisAbbr",
-  "cha": "ULTRAVERSE.AbilityChaAbbr"
+  "psy": "ULTRAVERSE.AbilityPsyAbbr",
+  "agi": "ULTRAVERSE.AbilityAgiAbbr"
 };

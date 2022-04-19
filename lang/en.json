@@ -1,17 +1,17 @@
 {
   "ULTRAVERSE.AbilityStr": "Strength",
-  "ULTRAVERSE.AbilityCon": "Constitution",
   "ULTRAVERSE.AbilityDex": "Dexterity",
+  "ULTRAVERSE.AbilityAgi": "Agility",
   "ULTRAVERSE.AbilityInt": "Intelligence",
   "ULTRAVERSE.AbilityPsy": "Psyche",
-  "ULTRAVERSE.AbilityAgi": "Agility",
+  "ULTRAVERSE.AbilityCon": "Constitution",
 
   "ULTRAVERSE.AbilityStrAbbr": "str",
-  "ULTRAVERSE.AbilityConAbbr": "con",
   "ULTRAVERSE.AbilityDexAbbr": "dex",
+  "ULTRAVERSE.AbilityAgiAbbr": "agi",
   "ULTRAVERSE.AbilityIntAbbr": "int",
   "ULTRAVERSE.AbilityPsyAbbr": "psy",
-  "ULTRAVERSE.AbilityAgiAbbr": "agi",
+  "ULTRAVERSE.AbilityConAbbr": "con",
 
   "ULTRAVERSE.EffectCreate": "Create Effect",
   "ULTRAVERSE.EffectToggle": "Toggle Effect",
