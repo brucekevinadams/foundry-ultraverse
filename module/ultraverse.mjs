@@ -19,7 +19,7 @@ Hooks.once('init', async function() {
   game.ultraverse = {
     ultraverseActor,
     ultraverseItem,
-    rollItemMacro
+    rollUltraverseMacro
   };
 
   // Add custom constants for configuration.
@@ -73,7 +73,7 @@ Handlebars.registerHelper('toLowerCase', function(str) {
 
 Hooks.once("ready", async function() {
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
-  Hooks.on("hotbarDrop", (bar, data, slot) => createItemMacro(data, slot));
+  Hooks.on("hotbarDrop", (bar, data, slot) => createUltraverseMacro(data, slot));
 });
 
 /* -------------------------------------------- */
@@ -87,7 +87,7 @@ Hooks.once("ready", async function() {
  * @param {number} slot     The hotbar slot to use
  * @returns {Promise}
  */
-async function createItemMacro(data, slot) {
+async function createUltraverseMacro(data, slot) {
   if (data.type !== "Item") return;
   if (!("data" in data)) return ui.notifications.warn("You can only create macro buttons for owned Items");
   const item = data.data;
@@ -114,7 +114,7 @@ async function createItemMacro(data, slot) {
  * @param {string} itemName
  * @return {Promise}
  */
-function rollItemMacro(itemName) {
+function rollUltraverseMacro(itemName) {
   const speaker = ChatMessage.getSpeaker();
   let actor;
   if (speaker.token) actor = game.actors.tokens[speaker.token];

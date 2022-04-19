@@ -16,7 +16,7 @@ ULTRAVERSE.foobar = {
   "con": "ULTRAVERSE.AbilityCon",
   "int": "ULTRAVERSE.AbilityInt",
   "psy": "ULTRAVERSE.AbilityPsy",
-  "agi": "ULTRAVERSE.AbilityAgi"
+  "agi": "ULTRAVERSE.AbilityAgi",
 };
 
 ULTRAVERSE.abilityAbbreviations = {
@@ -25,5 +25,5 @@ ULTRAVERSE.abilityAbbreviations = {
   "con": "ULTRAVERSE.AbilityConAbbr",
   "int": "ULTRAVERSE.AbilityIntAbbr",
   "psy": "ULTRAVERSE.AbilityPsyAbbr",
-  "agi": "ULTRAVERSE.AbilityAgiAbbr"
+  "agi": "ULTRAVERSE.AbilityAgiAbbr",
 };
