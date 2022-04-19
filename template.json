@@ -63,7 +63,7 @@
       "templates": ["base"],
       "quantity": 1,
       "weight": 0,
-      "formula": "d6 + @dex.mod + @agi.mod + @psy.mod"
+      "formula": "d20 + @dex.mod"
     },
     "feature": {
       "templates": ["base"],
