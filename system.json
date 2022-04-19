@@ -20,7 +20,7 @@
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "energy",
+  "secondaryTokenAttribute": "power",
   "tertiaryTokenAttribute": "stun",
   "url": "https://github.com/brucekevinadams/foundry-ultraverse",
   "manifest": "https://github.com/brucekevinadams/foundry-ultraverse/system.json",
